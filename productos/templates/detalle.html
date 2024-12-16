@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="card mx-auto mt-5" style="width: 30rem;">
+        <div class="card-body">
+            <h5 class="card-title text-center
+            ">{{ producto.nombre }}</h5>
+            <hr>
+            <table class="table table-hover">
+                <tr>
+                    <td>Stock:</td>
+                    <td>{{ producto.stock }}</td>
+                </tr>
+                <tr>
+                    <td>Puntaje:</td>
+                    <td>{{ producto.puntaje }}</td>
+                </tr>
+                <tr>
+                    <td>Categoria:</td>
+                    <td>{{ producto.categoria }}</td>
+                </tr>
+                <tr>
+                    <td>Descripcion:</td>
+                    <td>{{ producto.descripcion }}</td>
+                </tr>
+                <tr>
+                    <td>Precio:</td>
+                    <td>{{ producto.precio }}</td>
+                </tr>
+            </table>
+            <div class="text-end" style="width: 28rem;">
+                <a href="/productos" class="btn-sm btn-primary">Volver</a>
+            </div>
+            
+        </div>
+</div>
+
+{% endblock %}
